@@ -1,0 +1,19 @@
+<%- include('../cabecalho.ejs') %>
+<form method="post" enctype="multipart/form-data">
+    <br><br>
+    Código de Usuário<br>
+    <input type="text" name="id" readonly value="<%=Usuario._id%>">
+    <br><br>
+    Nome<br> 
+    <input type="text" name="nome" placeholder="Digite seu nome" value="<%=Usuario.nome%>">
+    <br><br>
+    Email<br>
+    <input type="email" name="email" placeholder="Digite seu novo endereço de email." value="<%=Usuario.email%>">
+    <br><br>
+    Senha<br>
+    <input type="password" name="senha" placeholder="Digite sua nova senha: " value="<%=Usuario.senha%>">
+    <br><br>
+
+    <input type="submit" value="ADICIONAR">
+</form>
+<%- include('../rodape.ejs') %>
